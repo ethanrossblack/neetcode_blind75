@@ -9,9 +9,16 @@ RSpec.describe "#max_area" do
       expect(max_area(height)).to eq(expected)
     end
 
-    it "Example 2" do
+    it "Case 2" do
       height = [1,1]
       expected = 1
+  
+      expect(max_area(height)).to eq(expected)
+    end
+
+    it "Case 3" do
+      height = [2,3,4,5,18,17,6]
+      expected = 17
   
       expect(max_area(height)).to eq(expected)
     end
